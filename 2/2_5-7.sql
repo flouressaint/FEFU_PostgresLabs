@@ -1,0 +1,16 @@
+-- 2.5-7
+
+-- 2
+SELECT MAX(MARK), MIN(MARK), student_id 
+FROM exam_marks
+GROUP BY STUDENT_ID;
+
+-- 3
+SELECT SEMESTER, SUBJ_NAME, SUBJ_ID
+FROM subject
+ORDER BY semester DESC, hour;
+
+-- 4
+SELECT EXAM_DATE, SUM(MARK) FROM exam_marks
+GROUP BY exam_date
+ORDER BY SUM(MARK);
