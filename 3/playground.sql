@@ -1,0 +1,2 @@
+SELECT *
+FROm subject1;
